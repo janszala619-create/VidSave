@@ -17,9 +17,7 @@ jobs:
         run: sudo xcode-select -s /Applications/Xcode_15.4.app
 
       - name: Tuist installieren
-        run: |
-          curl -Ls https://install.tuist.io | bash
-          echo "$HOME/.tuist/bin" >> $GITHUB_PATH
+        run: brew install tuist/tuist/tuist
 
       - name: Projekt generieren
         run: tuist generate --no-open
