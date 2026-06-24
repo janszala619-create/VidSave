@@ -16,7 +16,7 @@ struct VideoInfo: Identifiable, Codable {
     }
 }
 
-struct VideoFormat: Identifiable, Codable {
+struct VideoFormat: Identifiable, Codable, Hashable {
     let id: String
     let label: String
     let ext: String
