@@ -13,11 +13,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Tuist installieren
-        run: brew install tuist/tuist/tuist
+      - name: XcodeGen installieren
+        run: brew install xcodegen
 
       - name: Projekt generieren
-        run: tuist generate --no-open
+        run: xcodegen generate
 
       - name: App archivieren
         run: |
